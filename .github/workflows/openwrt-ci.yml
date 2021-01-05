@@ -92,6 +92,7 @@ jobs:
           CONFIG_TARGET_ramips_mt7621=y
           CONFIG_TARGET_ramips_mt7621_Default=y
           CONFIG_TARGET_ARCH_PACKAGES="mipsel_24kc"
+          CONFIG_TARGET_ramips_mt7621_DEVICE_zbtlink_zbt-we1326=y
           CONFIG_HAS_SUBTARGETS=y
           CONFIG_HAS_DEVICES=y
           CONFIG_TARGET_BOARD="ramips"
