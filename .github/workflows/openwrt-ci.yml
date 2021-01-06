@@ -148,7 +148,6 @@ jobs:
           CONFIG_PACKAGE_libspeex=m
           CONFIG_PACKAGE_mpd-full=m
           CONFIG_PACKAGE_mpd-mini=m
-          CONFIG_PACKAGE_upmpdcli=m
           CONFIG_PACKAGE_v2ray=m
           CONFIG_PACKAGE_trojan=m
           CONFIG_PACKAGE_motion=m
