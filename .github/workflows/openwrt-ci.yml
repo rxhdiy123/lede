@@ -130,20 +130,44 @@ jobs:
           CONFIG_PACKAGE_kmod-fs-vfat=y
           CONFIG_PACKAGE_block-mount=y
           CONFIG_PACKAGE_usbutils=y
+          CONFIG_PACKAGE_kmod-mmc-spi=y
+          CONFIG_PACKAGE_e2fsprogs=y
+          CONFIG_PACKAGE_cfdisk=y
+          CONFIG_PACKAGE_kmod-sdhci=y
           # CONFIG_PACKAGE_kmod-usb2-pci=y
           # CONFIG_PACKAGE_kmod-usb3=y
+          CONFIG_PACKAGE_kmod-i2c-core=y
+          CONFIG_PACKAGE_kmod-video-core=y
+          CONFIG_PACKAGE_kmod-video-videobuf2=y
+          CONFIG_PACKAGE_kmod-video-uvc=y
+          CONFIG_PACKAGE_kmod-input-core=y
+          CONFIG_PACKAGE_kmod-sound-core=y
+          CONFIG_PACKAGE_ kmod-usb-audio=y
+          CONFIG_PACKAGE_madplay-alsa=m
+          CONFIG_PACKAGE_mdnsresponder=m
+          CONFIG_PACKAGE_libspeex=m
+          CONFIG_PACKAGE_mpd-full=m
+          CONFIG_PACKAGE_mpd-mini=m
+          CONFIG_PACKAGE_upmpdcli=m
+          CONFIG_PACKAGE_v2ray=m
+          CONFIG_PACKAGE_trojan=m
+          CONFIG_PACKAGE_motion=m
           EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
+          CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
+          CONFIG_PACKAGE_luci-app-transmission=m
+          CONFIG_PACKAGE_luci-app-mjpg-streamer=m
           # CONFIG_PACKAGE_luci-app-aria2=y
-          # CONFIG_PACKAGE_luci-app-baidupcs-web=y
+          CONFIG_PACKAGE_luci-app-baidupcs-web=m
           # CONFIG_PACKAGE_luci-app-docker=y
-          # CONFIG_PACKAGE_luci-app-frpc=y
+          CONFIG_PACKAGE_luci-app-frpc=m
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
           # CONFIG_PACKAGE_luci-app-minidlna=y
-          # CONFIG_PACKAGE_luci-app-openvpn=y
+          CONFIG_PACKAGE_luci-app-openvpn=m
+          CONFIG_PACKAGE_luci-app-ssr-plus=m
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
@@ -164,7 +188,7 @@ jobs:
           # CONFIG_PACKAGE_luci-theme-netgear=y
           # EOF
           # 常用软件包:
-          # cat >> .config <<EOF
+          #cat >> .config <<EOF
           # CONFIG_PACKAGE_curl=y
           # CONFIG_PACKAGE_htop=y
           # CONFIG_PACKAGE_nano=y
@@ -172,7 +196,7 @@ jobs:
           # CONFIG_PACKAGE_tree=y
           # CONFIG_PACKAGE_vim-fuller=y
           # CONFIG_PACKAGE_wget=y
-          # EOF
+          #EOF
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           # cat >> .config <<EOF
           # # CONFIG_TARGET_IMAGES_PAD is not set
